@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editMedicalConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter medical conditions"
+            android:inputType="textMultiLine"/>
+
+        <EditText
+            android:id="@+id/editMedications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter medications"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editDisabilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter disabilities"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnSaveHealthHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>

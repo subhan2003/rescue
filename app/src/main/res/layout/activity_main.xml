@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#2C394B">
+
+    <!-- Medical ID/Profile Button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="159dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="App Logo"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_crop" />
+
+        <ImageButton
+            android:id="@+id/medButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="-225dp"
+            android:layout_marginEnd="137dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/call_diff"
+            android:onClick="callNineOneOne"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/medIDProfileButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-30dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu" />
+
+
+    <!-- Silent Emergency Report Button -->
+
+
+    <ImageButton
+        android:id="@+id/reportIncidentButton"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_button_background"
+        android:padding="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/non_emerg" />
+
+
+    <TextView
+        android:id="@+id/reportIncidentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reportIncidentButton"
+        android:layout_marginTop="-37dp"
+        android:padding="8dp"
+        android:text="Non-Urgent Issues"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/emergencyButton"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_below="@id/reportIncidentButton"
+        android:layout_marginTop="39dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_button_background"
+        android:padding="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/emerg" />
+
+    <TextView
+        android:id="@+id/emergencyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencyButton"
+        android:layout_marginTop="-31dp"
+        android:padding="8dp"
+        android:text="Immediate discreet help Assistance "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/emergencyButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/reportIncidentButton"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:text="SILENT EMERGENCY REPORT"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="18sp" />-->
+
+</RelativeLayout>
